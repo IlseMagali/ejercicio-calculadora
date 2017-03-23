@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+    <script src="main.js"></script>
+  </head>
+  <body>
+      <table>
+        <form id="calculador">
+          <tr><input id="operacionIngresada" placeholder="operación a calcular"></tr>
+          <tr>
+            <td><input onClick="mostrarNumero(1);" type="button" id="numeroUno" value="1"></td>
+            <td><input onClick="mostrarNumero(2);" type="button" id="numeroDos" value="2"></td>
+            <td><input onClick="mostrarNumero(3);" type="button" id="numeroTres" value="3"></td>
+            <td><input onClick="mostrarNumero(this.value);" type="button" id="operadorSuma" value="+"></td>
+          </tr>
+          <tr>
+            <td><input onClick="mostrarNumero(4);" type="button" id="numeroCuatro" value="4"></td>
+            <td><input onClick="mostrarNumero(5);" type="button" id="numeroCinco" value="5"></td>
+            <td><input onClick="mostrarNumero(6);" type="button" id="numeroSeis" value="6"></td>
+            <td><input onClick="mostrarNumero(this.value)" type="button" id="operadorResta" value="-"></td>
+          </tr>
+          <tr>
+            <td><input onClick="mostrarNumero(7);" type="button" id="numeroCuatro" value="7"></td>
+            <td><input onClick="mostrarNumero(8);" type="button" id="numeroCinco" value="8"></td>
+            <td><input onClick="mostrarNumero(9);" type="button" id="numeroSeis" value="9"></td>
+            <td><input onClick="mostrarNumero(this.value);" type="button" id="operadorMultiplicacion" value="*"></td>
+          </tr>
+          <tr>
+            <td><input onClick="mostrarNumero(this.value);" type="button" id="puntoDecimal" value="."></td>
+            <td><input onClick="mostrarNumero(0);" type="button" id="numeroCero" value="0"></td>
+            <td><input onClick="mostrarNumero(this.value);" type="button" id="resultado" value="="></td>
+            <td><input onClick="mostrarNumero(this.value);" type="button" id="division" value="/"></td>
+          </tr>
+      </form>
+    </table>
+  </body>
+</html>
